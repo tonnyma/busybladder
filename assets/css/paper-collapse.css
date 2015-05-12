@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*
+  Paper Collapse
+
+  Collapsible paper cards.
+
+  Made with love by bbo - ©2014 Alexander Rühle
+  MIT License http://opensource.org/licenses/MIT
+*/
+.collapse-card {
+  
+  cursor: pointer;
+  color: #fff;
+  padding: 3rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+  background-color: rgba(53, 174, 210, 0.67);
+  margin-bottom:10px;
+}
+.collapse-card .title {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+.collapse-card .title:before, .collapse-card .title:after {
+  content: " ";
+  display: table;
+}
+.collapse-card .title:after {
+  clear: both;
+}
+.collapse-card .title i {
+  float: left;
+}
+.collapse-card .title span {
+  float: right;
+  margin-left: 1rem;
+}
+.collapse-card .title strong {
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.collapse-card .title strong::after {
+  color: #404040;
+  font-family: 'FontAwesome';
+  padding-left: .4rem;
+  font-size: 1rem;
+  line-height: 1.49rem;
+}
+.collapse-card .body {
+  padding: 1rem;
+  display: none;
+}
+.collapse-card * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.collapse-card.active {
+  -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.18824);
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.18824);
+  z-index: 200;
+  margin: 1rem -1rem;
+  background-color:#F38630;
+  color:white;
+}
+.collapse-card.active:hover .title strong::after {
+  content: "\f066";
+}
+.collapse-card:hover .title strong::after {
+  content: "\f065";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,288 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+		<title>BusyBladder.com</title>
+
+  		<link rel="stylesheet" href="assets/font-awesome-4.3.0/css/font-awesome.css" />
+  		<script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+  		<script type="text/javascript" src="http://fast.fonts.net/jsapi/8442de40-868f-4f5c-8b81-754c5a0448ea.js"></script>
+  		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
+  		<link href="assets/css/foundation.min.css" rel="stylesheet" type="text/css" media="all"/>
+  		<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" media="all"/>
+  		<link rel="stylesheet" href="FlipClock-master/compiled/flipclock.css">
+  		<link rel="stylesheet" href="vertical-timeline/css/style.css">
+
+
+	</head>
+	<body>
+		 
+
+<nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <!-- Title Area -->
+          <li class="name">
+            <h1>
+              <a href="index.html" style="color:#26A2D9;">
+                BusyBladder.com
+              </a>
+            </h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+     
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+    
+            <li >
+              <a class="active" href="the-what.html">The What</a>
+            </li>
+  
+            <li><a href="the-study.html">The Goal Study</a></li>
+        
+            <li ">
+              <a href="study-participation.html">Study Participation</a>
+              
+            </li>
+            <li ">
+              <a href="about-research-studies.html">About Research</a>
+              
+            </li>
+            <li ">
+              <a href="about-research-studies.html">Participating Center</a>
+              
+            </li>
+          </ul>
+     
+          <!-- Right Nav Section -->
+          <!-- <ul class="right">
+
+            <li><a href="#" style="background-color: rgb(217, 38, 45); color:white !important;">Contact Us</a></li>
+            <!-- <li class="divider"></li> -->
+            
+          </ul>
+        </section>
+      </nav>
+
+
+<div id="theGrid">
+</div>
+
+<footer class="row full-width" style="border-top:1px solid rgba(128, 128, 128, 0.24);">
+        <div class="small-12 medium-12 large-12 columns" style="background-color:white;">
+          <div class="row">
+            <div class="small-12 medium-4 large-5 columns">
+              <p class="copyright">© Copyright Allergan, Inc. 2015 </p>
+            </div>
+            <div class="small-12 medium-8 large-6 columns">
+              <ul class="inline-list right" style="padding:15px; margin-bottom:0px;">
+                <li><a href="legal.html">Legal/Privacy Policy</a></li>
+                <li><a href="legal.html">Corporate Disclosure</a></li>
+                <li><a href="legal.html">Regulatory Disclaimer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+
+  		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/flowtype.min.js"></script>
+<script src="assets/css/app.min.css"></script>
+<script src="assets/js/foundation.min.js"></script>
+<script src="assets/js/foundation.equalizer.js"></script>
+<script src="assets/js/flowtype.js"></script>
+<script src="flipclock-master/compiled/flipclock.min.js"></script>
+<script src="flipclock-master/complied/flipclock.js"></script>
+<script src="flipclock-master/complied/flipclock.css"></script>
+<script>
+$(document).foundation('equalizer', 'reflow');
+</script>
+
+<script>
+$(document).foundation({
+  equalizer : {
+    // Specify if Equalizer should make elements equal height once they become stacked.
+    equalize_on_stack: true,
+    equalize_on_small: true
+  }
+});
+</script>
+<script type="text/javascript">
+var clock,countup;
+        clock = new FlipClock($('.101-counter'), {
+            clockFace: 'Counter',
+            minimumDigits: 3,
+        });
+
+countup = setInterval(function() {
+    clock.increment();
+        if(clock.getTime().time > 107) {
+        clock.stop();
+        clearInterval(countup);
+        }     
+}, 100); 
+</script>
+
+
+ <script type="text/javascript"> 
+        $j = jQuery.noConflict();
+        $j(document).ready(function() {
+            $j(".thewhat").flowtype({
+                minimum: 300,
+                maximum: 1000,
+                minFont: 12,
+                maxFont: 48,
+                fontRatio: 9
+            });
+            $j('.take-our-quiz-text , .contact-us-text').flowtype({
+                minimum: 300,
+                maximum: 1000,
+                minFont: 12,
+                maxFont: 48,
+                fontRatio: 9
+            });
+            $j('.study-participation').flowtype({
+                minimum: 300,
+                maximum: 1000,
+                minFont: 12,
+                maxFont: 48,
+                fontRatio: 9
+            });
+            $j('.take-our-quiz-text , .contact-us-text').flowtype({
+                minimum: 300,
+                maximum: 1000,
+                minFont: 12,
+                maxFont: 36,
+                fontRatio: 9
+            });
+            $j(".caption-text").flowtype({
+                minimum: 300,
+                maximum: 200,
+                minFont: 9,
+                maxFont: 18,
+                fontRatio: 9
+            });
+            $j('p').flowtype({
+                minimum: 600,
+                maximum: 1000,
+                minFont: 22,
+                maxFont: 22,
+                fontRatio: 40
+            });
+            $j(".thestudycaptions").flowtype({
+                minimum: 200,
+                maximum: 1000,
+                minFont: 11,
+                maxFont: 32,
+                fontRatio: 16
+            });
+            $j(".thestudycallout , .thestudycalloutsub").flowtype({
+                minimum: 200,
+                maximum: 1000,
+                minFont: 12,
+                maxFont: 28,
+                fontRatio: 14
+            });
+            $j(".thestudycalloutsub").flowtype({
+                minimum: 200,
+                maximum: 1000,
+                minFont: 12,
+                maxFont: 20,
+                fontRatio: 25
+            });
+            $j('.top-bar-section li a').flowtype({
+                minimum: 600,
+                maximum: 1000,
+                minFont: 16,
+                maxFont: 18,
+                fontRatio: 40
+            });
+            $j('.collapse-card .title').flowtype({
+                minimum: 600,
+                maximum: 1000,
+                minFont: 20,
+                maxFont: 22,
+                fontRatio: 40
+            });
+        });
+    </script>
+<script src="vertical-timeline/js/main.js"></script> 
+<script src="assets/js/the-what.js"></script> <!-- Resource jQuery -->
+<script src="assets/js/paper-collapse.min.js"></script>
+<link rel="stylesheet" href="assets/css/paper-collapse.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="wordsearchgame/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="wordsearchgame/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="wordsearchgame/jquery.wordsearchgame.js"></script>
+<script type="text/javascript" src="wordsearchgame/jquery.ui.touch-punch.min.js"></script>
+        <link  rel="stylesheet" type="text/css" href="wordsearchgame/jquery.wordsearchgame.css">
+        <script>
+		$(document).ready( function () {			var words = "haha,kidney,incontinence,nocturia,bladder,goal,"+
+						"frequency,urgency,constipation,uti";
+			
+			//attach the game to a div
+			$("#theGrid").wordsearchwidget({"wordlist" : words,"gridsize" : 25});
+
+		});
+        </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="zglossary/jquery.zglossary.js" type="text/javascript"></script>
+<link href="zglossary/jquery.zglossary.css" rel="stylesheet" type="text/css" />
+<script>
+$(document).ready(function () {
+    $('body').glossary('zglossary/terms.json', {
+		ignorecase: true
+	});
+});
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js"></script>
+<style type="text/css">
+#animate2 {
+	transition: background-color 1s;
+}
+</style>
+<script>
+   // this is where our code will go
+
+   
+var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 1000, offset: 0}});
+
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: 'scroll-trigger'})
+					.setClassToggle("#animate2", "yellowFont") // add class toggle
+					//.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+</script>
+<script>
+   // this is where our code will go
+
+   
+var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100, offset: 100}});
+
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: 'scroll-trigger'})
+					.setClassToggle("#animate2", "no-yellow") // add class toggle
+					//.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+					
+var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100, offset: -100}});
+	new ScrollMagic.Scene({triggerElement: 'scroll-trigger'})
+					.setClassToggle("#animate2", "no-yellow") // add class toggle
+					//.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+</script>
+
+
+
+	</body>
+</html>
